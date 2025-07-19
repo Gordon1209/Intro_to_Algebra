@@ -10,3 +10,8 @@
   - 1.6 Homomorphisms and Isomorphisms
   - 1.7 Group Actions
 - **2. Subgroups**
+
+# Reference
+1. Textbook: David S. Dummit, Richard M. Foote | Abstract Algebra, 3rd Edition
+2. [代數導論筆記](https://hackmd.io/@0xff07/ByT4ldAS8)
+
