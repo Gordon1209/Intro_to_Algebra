@@ -1,0 +1,276 @@
+\subsection{Basic Axioms and Examples}
+\Definition{1.1-1}
+{\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=3pt]
+    \item A {\sl binary operation} $\star$ on a set $G$ is a function $\star:G\times G\to G$.
+    For any $a,b\in G$, we shall write $a\star b$ for $\star(a,b)$.
+    \item A binary operation $\star$ on a set $G$ is {\sl associative} if for all $a,b,c\in G$,
+    we have $a\star (b\star c) = (a\star b)\star c$.
+    \item If $\star$ is a binary operation on a set $G$, we say elements $a$ and $b$ of $G$
+    {\sl commute} if $a\star b = b\star a$.
+    We say $\star$ (or $G$) is {\sl commutative} if for all $a,b\in G$, we have $a\star b = b\star a$.
+\end{enumerate}}
+\Exam{1.1-1}
+{\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=3pt]
+    \item $+$ (usual addition) is a commutative binary operation on $\mb{Z}$ (or on $\mb{Q}$, $\mb{R}$, $\mb{C}$ respectively).
+    \item $\times$ (usual multiplication) is a commutative binary operation on $\mb{Z}$ (or on $\mb{Q}$, $\mb{R}$, $\mb{C}$ respectively).
+    \item $-$ (usual subtraction) is noncommutative binary operation on $\mb{Z}$, where $-(a,b) = a-b$.
+    It is not a binary operation on $\mb{Z}^{+}$ (nor $\mb{Q}^{+}$, $\mb{R}^{+}$) (e.g. $-(1,2) = 1-2 = -1 \notin \mb{Z}^{+}$).
+    \item Taking the vector cross-product of two vectors in $\mb{R}^{3}$ is a binary operation which is not associative and not commutative. For example,
+    \begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=0pt, label=(\arabic*)]
+        \item ${\bf u} = (1,2,3)$, ${\bf v} = (4,5,6)\in\mb{R}^{3}$, ${\bf u}\times{\bf v} = (-3, 6, -3)$
+        
+        $\Rightarrow \mb{R}^{3}\times\mb{R}^{3}\to \mb{R}^{3}$
+        \item ${\bf u} = (1,2,3)$, ${\bf v} = (4,5,6)\in\mb{R}^{3}$, ${\bf u}\times{\bf v} = (-3, 6, -3)$, ${\bf v}\times{\bf u} = (3, -6, 3)$
+        
+        $\Rightarrow$ it is not commutative.
+        \item ${\bf u} = (1,2,3)$, ${\bf v} = (4,5,6)$, ${\bf w} = (7,8,9)\in\mb{R}^{3}$,
+        
+        $({\bf u}\times{\bf v})\times{\bf w} = (-3, 6, -3)\times(7,8,9) = (78,6,-66)$
+
+        ${\bf u}\times({\bf v}\times{\bf w}) = (1,2,3)\times(-3,6,-3) = (-24,-6,12)$
+    \end{enumerate}
+\end{enumerate}
+}
+Suppose that $\star$ is a binary operation on a set $G$, and $H$ is a subset of $G$.
+If the restriction of $\star$ to $H$ is a binary operation on $H$ ($\forall\ a,b\in H, a\star b\in H$), we say that $H$ is {\sl closed} under $\star$.
+
+Observe that if $\star$ is an associative (respectively, commutative) binary operation on a set $G$,
+and $\star$ restricted to some subset $H$ of $G$ is a binary operation on $H$,
+then $\star$ is automatically associative (respectively, commutative) on $H$ as well.
+\newpage
+\thispagestyle{oddpagestyle}
+\Definition{1.1-2}
+{
+\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=3pt]
+    \item A {\sl group} is an ordered pair $(G,\star)$ where $G$ is a set and
+    $\star$ is a binary operation on $G$ satisfying the following axioms:
+    \begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=0pt, label=(\roman*)]
+        \item {\bf Associative}: $(a\star b)\star c = a\star (b\star c)$, for all $a,b,c\in G$.
+        \item {\bf Identity}: There exists an element $e\in G$ such that
+        $e\star a = a\star e = a$ for all $a\in G$.
+        \item {\bf Inverses}: For each $a\in G$, there exists $a^{-1}\in G$ such that
+        $a\star a^{-1} = a^{-1}\star a = e$.
+    \end{enumerate}
+    \item The group $(G,\star)$ is called {\sl abelian} (or {\sl commutative}) if $a\star b = b\star a$ for all $a,b\in G$.
+\end{enumerate}
+}
+We say $G$ is a {\sl finite group} if in addition $G$ is a finite set.
+
+Note that the axiom (ii) ensures that a group is always nonempty.
+\Exam{1.1-2}
+{
+\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=3pt]
+    \item $\mb{Z}, \mb{Q}, \mb{R}$ and $\mb{C}$ are groups under $+$ with $e=0$ and $a^{-1} = -a$ for all $a$.
+    \item $\mb{Q}\,\diagdown\{0\}, \mb{R}\,\diagdown\{0\},\mb{C}\,\diagdown\{0\}, \mb{Q}^{+}, \mb{R}^{+}$ are groups
+    under $\times$ with $e=1$ and $a^{-1} = \dfrac{1}{a}$.
+    \item The axioms for a vector space $V$ which specify that $(V,+)$
+    is an abelian group.
+    \item For $n\in \mb{Z}^{+}$, $\mb{Z}/n\mb{Z}$ is an abelian group under the operation $+$ with the identity element $\overline{0}$
+    and the inverse of $\overline{a}$ is $\overline{-a}$.
+    \item For $n\in \mb{Z}^{+}$, the set $(\mb{Z}/n\mb{Z})^{\times}$ of equivalence classes $\overline{a}$ which have multiplicative inverses
+    mod $n$ is an abelian group under multiplication with the identity element $\overline{1}$.
+\end{enumerate}
+}
+If $(A,\star)$ and $(B,\diamond)$ are groups, we can find a new group $A\times B$, called the {\sl direct product}, whose elements are those in the Cartesian product
+\begin{align*}
+    A\times B = \{(a,b)\ |\ a\in A, b\in B\}
+\end{align*}
+and whose operation is defined componentwise:
+\begin{align*}
+    (a_{1}, b_{1})(a_{2}, b_{2}) = (a_{1}\star a_{2}, b_{1}\diamond b_{2})
+\end{align*}
+\Proposition{1.1-1}
+{If $G$ is a group under the operation $\star$, then
+\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=3pt]
+    \item The identity of $G$ is unique.
+    \item For each $a\in G$, $a^{-1}$ is uniquely determined.
+    \item $(a^{-1})^{-1} = a$ for all $a\in G$.
+    \item $(a\star b)^{-1} = (b)^{-1}\star(a)^{-1}$
+    \item {\bf Generalized Associative Law}: For any $a_{1}, a_{2},\dots,a_{n}\in G$, the value of $a_{1}\star a_{2}\star\dots\star a_{n}$
+    is independent of how the expression is bracketed.
+\end{enumerate}
+}
+{\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=3pt]
+    \item If $f$ and $g$ are both identities, then by axiom (ii) of the \textbf{\textsf{\color{green!60!blue} Definition 1.1-2}},
+    we have $f\star g = f$ and $g\star f = g$. Thus $f=g$, and the identity is unique.
+\end{enumerate}}
+\newpage
+\thispagestyle{evenpagestyle}
+\Proppf
+{\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=0pt]
+    \setcounter{enumi}{1}
+    \item Assume $b$ and $c$ are both inverses of $a$, and let $e$ be the identity of $G$.
+    By axiom (iii) of the \textbf{\textsf{\color{green!60!blue} Definition 1.1-2}}, $a\star b=e$ and $c\star a=e$.
+    Thus
+    \begin{align*}
+        c &= c\star e \hspace{10pt}&(\text{Axiom (ii)})\\
+        &= c\star (a\star b) \hspace{10pt}&(\text{Since } e = a\star b)\\
+        &= (c\star a)\star b \hspace{10pt}&(\text{Axiom (i)})\\
+        &= e\star b \hspace{10pt}&(\text{Since } e = c\star a)\\
+        &= b \hspace{10pt}&(\text{Axiom (ii)})
+    \end{align*}
+    \item The inverse of $a$ is $a^{-1}$, and the inverse of $a^{-1}$ is $(a^{-1})^{-1}$, by part 2.,
+    we know $a = (a^{-1})^{-1}$.
+    \item Let $c = (a\star b)^{-1}$, so by definition of $c$, $(a\star b) \star c = e$.
+    By the associative law, we have
+    \begin{align*}
+        a\star (b\star c) &= e
+    \end{align*}
+    Multiply both sides on the left by $a^{-1}$ to get
+    \begin{align*}
+        a^{-1}\star(a\star (b\star c)) = a^{-1}\star e
+    \end{align*}
+    The associative law on the LHS and the definition of $e$ on the RHS give
+    \begin{align*}
+        (a^{-1}\star a)\star (b\star c) &= a^{-1}\\
+        e\star (b\star c) &= a^{-1}\\
+        b\star c &= a^{-1}
+    \end{align*}
+    Now, multiply both sides on the left by $b^{-1}$ to get
+    \begin{align*}
+        b^{-1}\star(b\star c) &= b^{-1}\star a^{-1}\\
+        (b^{-1}\star b)\star c &= b^{-1}\star a^{-1}\\
+        e\star c &= b^{-1}\star a^{-1}\\
+        c &= b^{-1}\star a^{-1}
+    \end{align*}
+    Thus $(a\star b)^{-1} = b^{-1}\star a^{-1}$.
+    \item First show the result is true for $n=1,2$ and $3$.
+    Next, assume for any $k<n$ that any braketing of a product of $k$ elements,
+    $b_{1}\star b_{2}\star \dots\star b_{k}$ can be reduced (without altering the value of the product)
+    to an expression of the form
+    \begin{align*}
+        b_{1}\star(b_{2}\star (b_{3}\star (\dots \star b_{k}))\dots)
+    \end{align*}
+    Now argue that an bracketing of the product $a_{1}\star a_{2}\star\dots\star a_{n}$ must break into $2$
+    subproducts, say $(a_{1}\star a_{2}\star\dots\star a_{k})\star (a_{k+1}\star a_{k+2}\star\dots\star a_{n})$,
+    where each subproduct is bracketed in some fashion.
+    Apply the induction assumption to each of these two subproducts and finally reduce the result to the form
+    $a_{1}\star(a_{2}\star (a_{3}\star (\dots\star a_{n}))\dots)$ to complete the induction.
+\end{enumerate}}
+\newpage
+\thispagestyle{oddpagestyle}
+For any group $G$ (operation $\cdot$ implied)
+and $x\in G$ and $n\in\mb{Z}^{+}$ since the product $xx\dots x$ ($n$ terms)
+does not depend on how it is bracketed, we shall denote it by $x^{n}$.
+Denote $x^{-1}x^{-1}\dots x^{-1}$ ($n$ terms) by $x^{-n}$. Let $x^{0} = 1$, the identity of $G$.
+
+When we are dealing with specific groups, we shall use the natural (given) operation.
+For example, when the operation is $+$, the identity will be denoted by $0$
+and for any element $a$, the inverse $a^{-1}$ will be written $-a$,
+and $a+a+\dots+a$ ($n>0$ terms) will be written $na$; $-a-a-\dots-a$ ($n$ terms)
+will be written $-na$, and $0a = 0$.
+\Proposition{1.1-2}
+{Let $G$ be a group and let $a,b\in G$. The equations $ax=b$ and $ya=b$
+have unique solutions for $x,y\in G$.
+In particular, the left and right cancellation laws hold in $G$, i.e.,
+\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=0pt]
+    \item If $au=av$, then $u=v$.
+    \item If $ub=vb$, then $u=v$.
+\end{enumerate}}
+{We can solve $ax=b$ by multiplying both sides on the left by $a^{-1}$ and simplifying to get $x=a^{-1}b$.
+The uniqueness of $x$ follows because $a^{-1}$ is unique.
+Similarly, we can solve $ya=b$ by multiplying both sides on the right by $b^{-1}$ and simplifying to get $y=ba^{-1}$.
+The uniqueness of $y$ follows because $b^{-1}$ is unique.
+
+If $au=av$, multiply both sides on the left by $a^{-1}$, and simplify to get $u=v$.
+Similarly, if $ub=vb$, multiply both sides on the right by $b^{-1}$, and simplify to get $u=v$.
+}
+
+\Definition{1.1-3}
+{For $G$ a group and $x\in G$ define the {\sl order} of $x$ to be the smallest positive
+integer $n$ such that $x^{n} = 1$, and denote this integer by $\abs{x}$. In this case $x$
+is said to be of order $n$. If no positive power of $x$ is the identity, the order of $x$ is defined to be infinity
+and $x$ is said to be of infinite order.}
+
+\Exam{1.1-3}
+{\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=0pt]
+    \item An element of a group has order $1$ if and only if it is the identity.
+    \item In the additive groups $\mb{Z}$, $\mb{Q}$, $\mb{R}$ or $\mb{C}$ every nonzero
+    element has infinite order.
+    \item In the multiplicative groups $\mb{R}\ \diagdown\{0\}$ or $\mb{Q}\ \diagdown\{0\}$ the element
+    $-1$ has order $2$ and all other nonidentity elements have infinite order.
+    \item In the additive group $\mb{Z}/9\mb{Z}$, the element $\overline{6}$ has order $3$
+    since $\overline{6}\neq \overline{0}$, $\overline{6} + \overline{6} = \overline{12} = \overline{3} \neq \overline{0}$,
+    but $\overline{6} + \overline{6} + \overline{6} = \overline{18} = \overline{0}$, the identity in this group.
+    \item In the multiplicative group $(\mb{Z}/7\mb{Z})^{\times}$, the element $\overline{2}$ has order $3$
+    since $\overline{2}\neq \overline{1}$, $\overline{2}\times \overline{2} = \overline{4}\neq \overline{1}$,
+    but $\overline{2}\times \overline{2}\times \overline{2} = \overline{8} = \overline{1}$, the identity in this group.
+\end{enumerate}
+}
+
+\Definition{1.1-4}
+{Let $G=\{g_{1},g_{2},\dots,g_{n}\}$ be a finite group with $g_{1} = 1$.
+The {\sl multiplication table} or {\sl group table} of $G$ is the $n\times n$ matrix
+whose $i$, $j$ entry is the group element $g_{i}g_{j}$.
+}
+More about the group table:
+\begin{enumerate}[leftmargin=20pt, itemsep=0pt, topsep=0pt]
+    \item \href{https://youtu.be/BwHspSCXFNM?si=1ucTvpLN6bGUYX9v}{Group Multiplication Tables | Cayley Tables (Abstract Algebra)}
+    \item \href{https://youtu.be/tGCqP2ytP14?si=3P4tafGvrpjJWQyd}{Group Theory Step-by-Step: 1 - 7}
+\end{enumerate}
+
+\newpage
+\thispagestyle{evenpagestyle}
+\subsection{Dihedral Groups}
+For each $n\in \mb{Z}^{+}$, $n\ge 3$ let $D_{2n}$ be the set of symmetries
+of a regular $n$-gon, where a symmetry is any rigid motion of the $n$-gon which can
+be effected by taking a copy of the $n$-gon, moving this copy in any fashion in $3$-space,
+and then placing the copy back on the original $n$-gon so it exactly covers it.
+
+
+
+
+
+
+
+
+
+\subsection{Symmetric Groups}
+
+
+
+
+
+
+
+
+
+\subsection{Matrix Groups}
+
+
+
+
+
+
+
+
+
+\subsection{The Quaternion Group}
+
+
+
+
+
+
+
+
+
+\subsection{Homomorphisms and Isomorphisms}
+
+
+
+
+
+
+
+
+
+\subsection{Group Actions}
+
+
+
+
+
+
+
+
