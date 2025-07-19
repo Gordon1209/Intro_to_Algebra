@@ -1,6 +1,6 @@
 # Outline
 
-<font color="#00FF00">**Part I -  Group Theory**</font>
+**Part I -  Group Theory**
 - **1. Introduction to Groups**
   - 1.1 Basic Axioms and Examples
   - 1.2 Dihedral Groups
