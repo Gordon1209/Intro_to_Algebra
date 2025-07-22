@@ -217,6 +217,21 @@ of a regular $n$-gon, where a symmetry is any rigid motion of the $n$-gon which 
 be effected by taking a copy of the $n$-gon, moving this copy in any fashion in $3$-space,
 and then placing the copy back on the original $n$-gon so it exactly covers it.
 
+Each symmetry $s$ can be described uniquely by the corresponding permutation $\sigma$
+of $\{1,2,3,\dots,n\}$ where if the symmetry $s$ puts vertex $i$ in the place where vertex $j$
+was originally, then $\sigma$ is the permutation sending $i$ to $j$.
+
+The identity og $D_{2n}$ is the identity symmetry (which leaves all vertices fixed), denoted by $1$,
+and the inverse of $s\in D_{2n}$ is the symmetry which reverses all rigid motions of $s$
+(so if $s$ effects permutation $\sigma$, then the inverse of $s$ effects the permutation $\sigma^{-1}$).
+
+\Proposition{1.2-1}
+{The order of the dihedral group
+\begin{align*}
+    \abs{D_{2n}} = 2n
+\end{align*}
+}
+{}
 \begin{center}
     \input{Fig1.2-1.tex}
 \end{center}
