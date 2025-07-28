@@ -4,6 +4,7 @@
 - **1. Introduction to Groups**
   - 1.1 Basic Axioms and Examples
   - 1.2 Dihedral Groups
+    - Ref. [Matthew Macauley | Lecture 2.2: Dihedral groups](https://www.math.clemson.edu/~macaule/classes/m20_math4120/slides/math4120_lecture-2-02_h.pdf)
   - 1.3 Symmetric Groups
   - 1.4 Matrix Groups
   - 1.5 The Quaternion Group
