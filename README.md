@@ -12,6 +12,7 @@
 - **2. Subgroups**
 
 # Reference
-1. Textbook: David S. Dummit, Richard M. Foote | Abstract Algebra, 3rd Edition
-2. [代數導論筆記](https://hackmd.io/@0xff07/ByT4ldAS8)
-3. [UCL MATH0007: Algebra for Joint Honours Students](https://www.ucl.ac.uk/~ucahmto/0007/_book/index.html)
+1. Textbook 1: David S. Dummit, Richard M. Foote | Abstract Algebra, 3rd Edition
+2. textbook 2: Matej Brešar | Undergraduate Algebra A Unified Approach
+3. [代數導論筆記](https://hackmd.io/@0xff07/ByT4ldAS8)
+4. [UCL MATH0007: Algebra for Joint Honours Students](https://www.ucl.ac.uk/~ucahmto/0007/_book/index.html)
