@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.26)  19 SEP 2025 10:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.26)  19 SEP 2025 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,7 +864,7 @@ Package geometry Warning: Over-specification in `v'-direction.
 LaTeX Warning: Unused global option(s):
     [numbers].
 
-No file Algebra_Note.aux.
+(./Algebra_Note.aux)
 \openout1 = `Algebra_Note.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 261.
@@ -877,7 +877,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 261.
 LaTeX Font Info:    ... okay on input line 261.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 261.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 261.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 261.
@@ -953,11 +953,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 261.
 
 Package hyperref Info: Link coloring ON on input line 261.
+(./Algebra_Note.out) (./Algebra_Note.out)
 \@outlinefile=\write4
 \openout4 = `Algebra_Note.out'.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
@@ -999,13 +998,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-No file Algebra_Note.toc.
-\tf@toc=\write5
-\openout5 = `Algebra_Note.toc'.
-
-[1
-
-] (./sec0.tex
+(./Algebra_Note.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1013,7 +1006,13 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
+
+])
+\tf@toc=\write5
+\openout5 = `Algebra_Note.toc'.
+
+ (./sec0.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1138,21 +1137,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-Package rerunfilecheck Warning: File `Algebra_Note.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Algebra_Note.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  89D38980B5F9E5E5598D3B7AFC305D59;4009.
+Package rerunfilecheck Info: File `Algebra_Note.out' has not changed.
+(rerunfilecheck)             Checksum: 89D38980B5F9E5E5598D3B7AFC305D59;4009.
  ) 
 Here is how much of TeX's memory you used:
- 43379 strings out of 474878
- 1038897 string characters out of 5762516
+ 43395 strings out of 474878
+ 1039168 string characters out of 5762516
  1958627 words of memory out of 5000000
- 64673 multiletter control sequences out of 15000+600000
+ 64681 multiletter control sequences out of 15000+600000
  565881 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,23n,121p,756b,912s stack positions out of 10000i,1000n,20000p,200000b,200000s
